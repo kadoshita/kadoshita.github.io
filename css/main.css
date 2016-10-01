@@ -14,6 +14,7 @@
 /* OVERALL ASPECT */
 
 body {
+	min-width:360px;
   background-color: #fafafa;
     font-family: "Lato";
     font-weight: 300;
@@ -48,7 +49,7 @@ p {
 
 /* Links */
 a {
-    color: #1976d2;
+    color: #1976ee;
     word-wrap: break-word;
 
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -184,7 +185,6 @@ a:after {
 
 #skills ul li {
 	font-size: 24px;
-	/*text-align: left;*/
 	color: white;
 }
 
@@ -204,9 +204,28 @@ a:after {
 	font-size: 18px;
 	text-align: left;
 }
+
+#products{
+	background-color: #4e4e4e;
+	color: #fff;
+}
+#products h2{
+	color: #fff;
+}
+#products p{
+	text-align: left;
+	font-size: 20px;
+}
+#products a{
+	font-weight: bold;
+}
+.title{
+	text-align: center;
+	font-size: 22px;
+}
+
 /* Social Links */
 #social {
-	background-color: #4e4e4e;
 	width: 100%;
 	padding-top: 100px;
 	padding-bottom: 100px;
