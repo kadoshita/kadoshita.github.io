@@ -133,6 +133,7 @@ a:after {
 	padding-top: 150px;
 	padding-bottom: 150px;
 	background-image: url(/img/top.jpg);
+	background-attachment: fixed;
 	-moz-background-size:cover;
 	background-size:cover;
 	display: inline-block;
