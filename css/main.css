@@ -214,10 +214,27 @@ a:after {
 	text-align: left;
 }
 
-#products{
+#activities{
 	background-color: #4e4e4e;
 	color: #fff;
 }
+#activities h2 {
+	color: white;
+}
+#activities ul li {
+	font-size: 24px;
+	text-align: left;
+}
+
+#activities ul ul li{
+	font-size: 18px;
+	text-align: left;
+}
+#activities ul ul ul li{
+	font-size: 16px;
+	text-align: left;
+}
+
 #products h2{
 	color: #fff;
 }
