@@ -234,7 +234,9 @@ a:after {
 	font-size: 16px;
 	text-align: left;
 }
-
+#activities ul ul li a{
+	color: #0099ff;
+}
 #products p{
 	text-align: left;
 	font-size: 20px;
