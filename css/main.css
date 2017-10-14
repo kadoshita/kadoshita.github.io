@@ -237,6 +237,12 @@ a:after {
 #activities ul ul li a{
 	color: #0099ff;
 }
+#activities div div ul ul ul li.award{
+	font-size: 24px;
+	font-weight: bold;
+	color: red;
+}
+
 #products p{
 	text-align: left;
 	font-size: 20px;
