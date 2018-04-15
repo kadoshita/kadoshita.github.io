@@ -1,35 +1,35 @@
-;(function () {
-	
+; (function () {
+
 	'use strict';
 
 
 
 	var isMobile = {
-		Android: function() {
+		Android: function () {
 			return navigator.userAgent.match(/Android/i);
 		},
-			BlackBerry: function() {
+		BlackBerry: function () {
 			return navigator.userAgent.match(/BlackBerry/i);
 		},
-			iOS: function() {
+		iOS: function () {
 			return navigator.userAgent.match(/iPhone|iPad|iPod/i);
 		},
-			Opera: function() {
+		Opera: function () {
 			return navigator.userAgent.match(/Opera Mini/i);
 		},
-			Windows: function() {
+		Windows: function () {
 			return navigator.userAgent.match(/IEMobile/i);
 		},
-			any: function() {
+		any: function () {
 			return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
 		}
 	};
 
-	var fullHeight = function() {
+	var fullHeight = function () {
 
-		if ( !isMobile.any() ) {
+		if (!isMobile.any()) {
 			$('.js-fullheight').css('height', $(window).height());
-			$(window).resize(function(){
+			$(window).resize(function () {
 				$('.js-fullheight').css('height', $(window).height());
 			});
 		}
@@ -38,55 +38,55 @@
 
 	// Animations
 
-	var contentWayPoint = function() {
+	var contentWayPoint = function () {
 		var i = 0;
-		$('.animate-box').waypoint( function( direction ) {
+		$('.animate-box').waypoint(function (direction) {
 
-			if( direction === 'down' && !$(this.element).hasClass('animated') ) {
-				
+			if (direction === 'down' && !$(this.element).hasClass('animated')) {
+
 				i++;
 
 				$(this.element).addClass('item-animate');
-				setTimeout(function(){
+				setTimeout(function () {
 
-					$('body .animate-box.item-animate').each(function(k){
+					$('body .animate-box.item-animate').each(function (k) {
 						var el = $(this);
-						setTimeout( function () {
+						setTimeout(function () {
 							var effect = el.data('animate-effect');
-							if ( effect === 'fadeIn') {
+							if (effect === 'fadeIn') {
 								el.addClass('fadeIn animated');
-							} else if ( effect === 'fadeInLeft') {
+							} else if (effect === 'fadeInLeft') {
 								el.addClass('fadeInLeft animated');
-							} else if ( effect === 'fadeInRight') {
+							} else if (effect === 'fadeInRight') {
 								el.addClass('fadeInRight animated');
 							} else {
 								el.addClass('fadeInUp animated');
 							}
 
 							el.removeClass('item-animate');
-						},  k * 200, 'easeInOutExpo' );
+						}, k * 200, 'easeInOutExpo');
 					});
-					
+
 				}, 100);
-				
+
 			}
 
-		} , { offset: '85%' } );
+		}, { offset: '85%' });
 	};
 
 
-	var burgerMenu = function() {
+	var burgerMenu = function () {
 
-		$('.js-fh5co-nav-toggle').on('click', function(event){
+		$('.js-fh5co-nav-toggle').on('click', function (event) {
 			event.preventDefault();
 			var $this = $(this);
 
 			if ($('body').hasClass('offcanvas')) {
 				$this.removeClass('active');
-				$('body').removeClass('offcanvas');	
+				$('body').removeClass('offcanvas');
 			} else {
 				$this.addClass('active');
-				$('body').addClass('offcanvas');	
+				$('body').addClass('offcanvas');
 			}
 		});
 
@@ -95,58 +95,58 @@
 	};
 
 	// Click outside of offcanvass
-	var mobileMenuOutsideClick = function() {
+	var mobileMenuOutsideClick = function () {
 
 		$(document).click(function (e) {
-	    var container = $("#fh5co-aside, .js-fh5co-nav-toggle");
-	    if (!container.is(e.target) && container.has(e.target).length === 0) {
+			var container = $("#fh5co-aside, .js-fh5co-nav-toggle");
+			if (!container.is(e.target) && container.has(e.target).length === 0) {
 
-	    	if ( $('body').hasClass('offcanvas') ) {
+				if ($('body').hasClass('offcanvas')) {
 
-    			$('body').removeClass('offcanvas');
-    			$('.js-fh5co-nav-toggle').removeClass('active');
-			
-	    	}
-	    	
-	    }
+					$('body').removeClass('offcanvas');
+					$('.js-fh5co-nav-toggle').removeClass('active');
+
+				}
+
+			}
 		});
 
-		$(window).scroll(function(){
-			if ( $('body').hasClass('offcanvas') ) {
+		$(window).scroll(function () {
+			if ($('body').hasClass('offcanvas')) {
 
-    			$('body').removeClass('offcanvas');
-    			$('.js-fh5co-nav-toggle').removeClass('active');
-			
-	    	}
+				$('body').removeClass('offcanvas');
+				$('.js-fh5co-nav-toggle').removeClass('active');
+
+			}
 		});
 
 	};
 
-	var sliderMain = function() {
-		
-	  	$('#fh5co-hero .flexslider').flexslider({
+	var sliderMain = function () {
+
+		$('#fh5co-hero .flexslider').flexslider({
 			animation: "fade",
 			slideshowSpeed: 5000,
 			directionNav: true,
-			start: function(){
-				setTimeout(function(){
+			start: function () {
+				setTimeout(function () {
 					$('.slider-text').removeClass('animated fadeInUp');
 					$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');
 				}, 500);
 			},
-			before: function(){
-				setTimeout(function(){
+			before: function () {
+				setTimeout(function () {
 					$('.slider-text').removeClass('animated fadeInUp');
 					$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');
 				}, 500);
 			}
 
-	  	});
+		});
 
 	};
 
 	// Document on load.
-	$(function(){
+	$(function () {
 		fullHeight();
 		contentWayPoint();
 		burgerMenu();
@@ -154,5 +154,45 @@
 		sliderMain();
 	});
 
-
+	var setMenuStatus = function (item) {
+		$('#fh5co-main-menu > ul > li').removeClass('fh5co-active');
+		switch (item) {
+			case 'education':
+				$('#fh5co-main-menu > ul:nth-child(1) > li:nth-child(2)').addClass('fh5co-active');
+				break;
+			case 'skills':
+				$('#fh5co-main-menu > ul:nth-child(1) > li:nth-child(3)').addClass('fh5co-active');
+				break;
+			case 'products':
+				$('#fh5co-main-menu > ul:nth-child(1) > li:nth-child(4)').addClass('fh5co-active');
+				break;
+			case 'activities':
+				$('#fh5co-main-menu > ul:nth-child(1) > li:nth-child(5)').addClass('fh5co-active');
+				break;
+			default:
+				$('#fh5co-main-menu > ul:nth-child(1) > li:nth-child(1)').addClass('fh5co-active');
+				break;
+		}
+	};
+	$(window).scroll(function () {
+		var current = $(this).scrollTop()+20;
+		if(current>=$('#education').offset().top){
+			setMenuStatus('education');
+		}
+		if(current>=$('#skills').offset().top){
+			setMenuStatus('skills');
+		}
+		if(current>=$('#products').offset().top){
+			setMenuStatus('products');
+		}
+		if (current >= $('#activities').offset().top) {
+			setMenuStatus('activities');
+		}
+		if(current==($(document).innerHeight()-$(window).innerHeight())+20){
+			setMenuStatus('activities');
+		}
+		if (current == 20) {
+			setMenuStatus();
+		}
+	});
 }());
