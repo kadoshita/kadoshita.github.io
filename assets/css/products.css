@@ -2243,9 +2243,8 @@ input, select, textarea {
 		.icon:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
-			font-family: "Font Awesome 5 Free";
+			/* font-family: "Font Awesome 5 Free"; */
 			font-style: normal;
-			font-weight: 900;
 			text-transform: none !important;
 		}
 
@@ -2271,6 +2270,7 @@ input, select, textarea {
 				border-radius: 100%;
 				border: solid 1px;
 				text-align: center;
+				font-weight: 900;
 			}
 
 		.icon.alt {
@@ -2287,6 +2287,10 @@ input, select, textarea {
 				text-align: center;
 				line-height: 2em;
 				color: #636363;
+				font-weight: 400;
+			}
+			.icon.alt.fas:before{
+				font-weight: 900;
 			}
 
 		.icon.style1 {
