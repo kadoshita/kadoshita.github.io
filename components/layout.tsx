@@ -12,18 +12,22 @@ export default function Layout({ children, home }) {
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="description"
-          content="sublimerのポートフォリオ"
-        />
-        <meta
-          property="og:image"
-          content={`https://og-image.vercel.app/${encodeURI(
-            siteTitle
-          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.zeit.co%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-        />
-        <meta name="og:title" content={siteTitle} />
+        <meta name="description" content="sublimerのポートフォリオ" />
+        <meta name="author" content="Yoshiki Kadoshita" />
+        <meta name="keywords" content="Kadoshita,Android,WebRTC,シャトルラン,高専,プロコン" />
+
+        <meta name="theme-color" content="#2196F3" />
+
+        <meta property="og:title" content={siteTitle} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://sublimer.me" />
+        <meta property="og:image" content="https://sublimer.me/images/profile.png" />
+        <meta property="og:description" content="sublimerのポートフォリオ" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={siteTitle} />
+        <meta name="twitter:description" content="sublimerのポートフォリオ" />
+        <meta name="twitter:image" content="https://sublimer.me/images/profile.png" />
+        <meta name="twitter:url" content="https://sublimer.me" />
       </Head>
       <header className={styles.header}>
         {home ? (
