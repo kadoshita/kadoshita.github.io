@@ -38,7 +38,8 @@ const skillsData: ChartData = {
             data: skills.map(s => s.level),
             backgroundColor: 'rgb(33, 150, 243)',
             borderColor: 'rgb(33, 150, 243)',
-            borderWidth: 1
+            borderWidth: 1,
+            pointRadius: 0
         }
     ]
 };
@@ -50,7 +51,8 @@ const languageSkillsData: ChartData = {
             data: languageSkills.map(s => s.level),
             backgroundColor: 'rgb(33, 150, 243)',
             borderColor: 'rgb(33, 150, 243)',
-            borderWidth: 1
+            borderWidth: 1,
+            pointRadius: 0
         }
     ]
 };
@@ -62,7 +64,8 @@ const techSkillsData: ChartData = {
             data: techSkills.map(s => s.level),
             backgroundColor: 'rgb(33, 150, 243)',
             borderColor: 'rgb(33, 150, 243)',
-            borderWidth: 1
+            borderWidth: 1,
+            pointRadius: 0
         }
     ]
 };
