@@ -3,9 +3,14 @@
     grid-template-columns: 33.33333% 33.33333% 33.33333%;
 }
 
-.chart{
+.item{
     width: 100%;
-    margin-bottom: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.smallText{
+    font-size: small;
 }
 
 @media(max-width: 1170px){
