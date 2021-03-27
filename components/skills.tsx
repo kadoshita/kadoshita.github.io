@@ -10,26 +10,29 @@ const skills = [
     { skill: 'Operation', level: 7 },
     { skill: 'Monitoring', level: 5 },
     { skill: 'Cloud', level: 6 }
-];
+].sort((a, b) => a.skill.localeCompare(b.skill));
 
 const languageSkills = [
     { lang: 'JavaScript', level: 10 },
     { lang: 'TypeScript', level: 7 },
     { lang: 'C#', level: 5 },
-    { lang: 'Java', level: 3 },
+    { lang: 'Java', level: 4 },
+    { lang: 'Go', level: 3 },
     { lang: 'C/C++', level: 3 },
     { lang: 'ShellScript', level: 4 }
-];
+].sort((a, b) => a.lang.localeCompare(b.lang));
 
 const techSkills = [
     { name: 'WebRTC', level: 10 },
     { name: 'Docker', level: 7 },
-    { name: 'Ubuntu', level: 6 },
     { name: 'Windows Server', level: 7 },
-    { name: 'NEC IX2105', level: 8 },
+    { name: 'NEC IX', level: 8 },
     { name: 'Kubernetes', level: 3 },
-    { name: 'Prometheus', level: 6 }
-]
+    { name: 'Prometheus', level: 6 },
+    { name: 'Ubuntu', level: 6 },
+    { name: 'Android', level: 4 }
+].sort((a, b) => a.name.localeCompare(b.name));
+
 const skillsData: ChartData = {
     labels: skills.map(s => s.skill),
     datasets: [
