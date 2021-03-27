@@ -1,0 +1,24 @@
+{
+    "redirects": [
+        {
+            "source": "/kisei-online",
+            "destination": "https://kadoshita.github.io/kisei-online"
+        },
+        {
+            "source": "/endemic-area-dashboard",
+            "destination": "https://kadoshita.github.io/endemic-area-dashboard"
+        },
+        {
+            "source": "/webrtc-caller-callee",
+            "destination": "https://kadoshita.github.io/webrtc-caller-callee"
+        },
+        {
+            "source": "/slides",
+            "destination": "https://kadoshita.github.io/slides"
+        },
+        {
+            "source": "/ghosn-gone",
+            "destination": "https://kadoshita.github.io/ghosn-gone"
+        }
+    ]
+}
