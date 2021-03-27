@@ -3,6 +3,7 @@ import Career from '../components/career';
 import Layout, { siteTitle } from '../components/layout';
 import Products from '../components/products';
 import Skills from '../components/skills';
+import SNS from '../components/sns';
 import utilStyles from '../styles/utils.module.css';
 
 const Home = () => {
@@ -36,6 +37,7 @@ const Home = () => {
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h1 className={utilStyles.headingXl}>SNS</h1>
+        <SNS></SNS>
       </section>
     </Layout>
   )

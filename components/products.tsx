@@ -9,6 +9,7 @@ const Products = () => {
                 <p>Webページをクリッピングして、共有できるWebアプリケーションです。</p>
                 <p className={styles.smallText}>Next.js / React / TypeScript / Azure</p>
                 <Image
+                    className={styles.image}
                     src='/images/fluid.png'
                     width={390}
                     height={200}
@@ -26,6 +27,7 @@ const Products = () => {
                 <p>ソースコードをリアルタイムで配信できるオンラインエディターです。</p>
                 <p className={styles.smallText}>ASP.NET(C#) / SignalR / React / Azure / Docker</p>
                 <Image
+                    className={styles.image}
                     src='/images/live-share-editor.png'
                     width={390}
                     height={200}
@@ -41,6 +43,7 @@ const Products = () => {
                 <p>TeXファイルの文字数と作業時間を表示するWebアプリケーションです。</p>
                 <p className={styles.smallText}>TypeScript / fastify / CLI(commander) / Chart.js</p>
                 <Image
+                    className={styles.image}
                     src='/images/latext-counter.png'
                     width={390}
                     height={200}

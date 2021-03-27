@@ -13,6 +13,10 @@
     font-size: small;
 }
 
+.image{
+    border: solid 2px white !important;
+}
+
 @media(max-width: 1170px){
     .container{
         display: grid;

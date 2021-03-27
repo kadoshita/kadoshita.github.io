@@ -9,7 +9,8 @@ const skills = [
     { skill: 'IoT', level: 5 },
     { skill: 'Operation', level: 7 },
     { skill: 'Monitoring', level: 5 },
-    { skill: 'Cloud', level: 6 }
+    { skill: 'Cloud', level: 6 },
+    { skill: 'Remote Work', level: 8 }
 ].sort((a, b) => a.skill.localeCompare(b.skill));
 
 const languageSkills = [
@@ -18,8 +19,8 @@ const languageSkills = [
     { lang: 'C#', level: 5 },
     { lang: 'Java', level: 4 },
     { lang: 'Go', level: 3 },
-    { lang: 'C/C++', level: 3 },
-    { lang: 'ShellScript', level: 4 }
+    { lang: 'C/C++', level: 4 },
+    { lang: 'ShellScript', level: 3 }
 ].sort((a, b) => a.lang.localeCompare(b.lang));
 
 const techSkills = [
@@ -84,7 +85,7 @@ const options: ChartOptions = {
         },
         pointLabels: {
             fontColor: 'rgb(33, 150, 243)',
-            fontSize: 20
+            fontSize: 16
         }
     },
     legend: {
