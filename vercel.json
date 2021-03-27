@@ -1,24 +1,24 @@
 {
-    "redirects": [
+    "rewrites": [
         {
-            "source": "/kisei-online",
-            "destination": "https://kadoshita.github.io/kisei-online"
+            "source": "/kisei-online/:path*",
+            "destination": "https://kadoshita.github.io/kisei-online/:path*"
         },
         {
-            "source": "/endemic-area-dashboard",
-            "destination": "https://kadoshita.github.io/endemic-area-dashboard"
+            "source": "/endemic-area-dashboard/:path*",
+            "destination": "https://kadoshita.github.io/endemic-area-dashboard/:path*"
         },
         {
-            "source": "/webrtc-caller-callee",
-            "destination": "https://kadoshita.github.io/webrtc-caller-callee"
+            "source": "/webrtc-caller-callee/:path*",
+            "destination": "https://kadoshita.github.io/webrtc-caller-callee/:path*"
         },
         {
-            "source": "/slides",
-            "destination": "https://kadoshita.github.io/slides"
+            "source": "/slides/:path*",
+            "destination": "https://kadoshita.github.io/slides/:path*"
         },
         {
-            "source": "/ghosn-gone",
-            "destination": "https://kadoshita.github.io/ghosn-gone"
+            "source": "/ghosn-gone/:path*",
+            "destination": "https://kadoshita.github.io/ghosn-gone/:path*"
         }
     ]
 }
