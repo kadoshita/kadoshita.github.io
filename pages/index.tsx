@@ -48,6 +48,10 @@ const Home = () => {
         <Career></Career>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+        <h1 className={utilStyles.headingXl}>Activity</h1>
+        <a href='https://www.notion.so/sublimer/5dff80ef7658466e8801597d54b90be3'>コンテスト・コミュニティー主催・登壇など</a>
+      </section>
+      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h1 className={utilStyles.headingXl}>Certification</h1>
         <ul className={utilStyles.list}>
           <li>基本情報処理技術者</li>
