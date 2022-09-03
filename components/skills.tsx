@@ -1,6 +1,16 @@
-import { ChartData, ChartOptions } from 'chart.js';
+import {
+    Chart,
+    ChartData,
+    ChartOptions,
+    LineElement,
+    PointElement,
+    RadialLinearScale,
+    Filler
+} from 'chart.js';
 import { Radar } from 'react-chartjs-2';
 import styles from './skills.module.css';
+
+Chart.register(LineElement, PointElement, RadialLinearScale, Filler);
 
 const skills = [
     { skill: 'Programming', level: 10 },
@@ -34,7 +44,7 @@ const techSkills = [
     { name: 'Android', level: 4 }
 ].sort((a, b) => a.name.localeCompare(b.name));
 
-const skillsData: ChartData = {
+const skillsData: ChartData<'radar'> = {
     labels: skills.map(s => s.skill),
     datasets: [
         {
@@ -47,7 +57,7 @@ const skillsData: ChartData = {
         }
     ]
 };
-const languageSkillsData: ChartData = {
+const languageSkillsData: ChartData<'radar'> = {
     labels: languageSkills.map(s => s.lang),
     datasets: [
         {
@@ -60,7 +70,7 @@ const languageSkillsData: ChartData = {
         }
     ]
 };
-const techSkillsData: ChartData = {
+const techSkillsData: ChartData<'radar'> = {
     labels: techSkills.map(s => s.name),
     datasets: [
         {
@@ -74,25 +84,34 @@ const techSkillsData: ChartData = {
     ]
 };
 
-const options: ChartOptions = {
-    scale: {
-        ticks: {
-            beginAtZero: true,
-            display: false
-        },
-        gridLines: {
-            color: 'rgb(33, 150, 243)'
-        },
-        pointLabels: {
-            fontColor: 'rgb(33, 150, 243)',
-            fontSize: 16
+const options: ChartOptions<'radar'> = {
+    scales: {
+        r: {
+            angleLines: {
+                display: false
+            },
+            pointLabels: {
+                font: {
+                    size: 16
+                },
+                color: 'rgb(33, 150, 243)'
+            },
+            grid: {
+                color: 'rgb(33, 150, 243)'
+            },
+            ticks: {
+                display: false
+            },
+            beginAtZero: true
         }
     },
-    legend: {
-        display: false
-    },
-    tooltips: {
-        enabled: false
+    plugins: {
+        legend: {
+            display: false
+        },
+        tooltip: {
+            enabled: false
+        }
     }
 };
 
@@ -100,23 +119,16 @@ const Skills = () => {
     return (
         <div className={styles.container}>
             <div className={styles.chart}>
-                <Radar
-                    data={skillsData}
-                    options={options}></Radar>
+                <Radar data={skillsData} options={options}></Radar>
             </div>
             <div className={styles.chart}>
-                <Radar
-                    data={languageSkillsData}
-                    options={options}></Radar>
+                <Radar data={languageSkillsData} options={options}></Radar>
             </div>
             <div className={styles.chart}>
-                <Radar
-                    data={techSkillsData}
-                    options={options}></Radar>
+                <Radar data={techSkillsData} options={options}></Radar>
             </div>
         </div>
-
-    )
+    );
 };
 
 export default Skills;
