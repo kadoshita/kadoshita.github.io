@@ -24,7 +24,7 @@ const Home = () => {
                 </div>
                 <div className={style.item}>
                     <p className={utilStyles.headingMd}>勉強したいこと</p>
-                    <p>IaC / テストコード / Linuxシステムコール / ログ解析</p>
+                    <p>RDB・SQL / パフォーマンスチューニング</p>
                 </div>
                 <div className={style.item}>
                     <p className={utilStyles.headingMd}>苦手なこと</p>
