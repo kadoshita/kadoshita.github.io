@@ -21,7 +21,7 @@ const Products = () => {
                 />
                 <p>
                     <a
-                        href="https://fluid-portal.azurewebsites.net/"
+                        href="https://fluid.sublimer.me/"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
