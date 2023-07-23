@@ -20,28 +20,27 @@ const skills = [
     { skill: 'Operation', level: 7 },
     { skill: 'Monitoring', level: 7 },
     { skill: 'Cloud', level: 7 },
-    { skill: 'Remote Work', level: 8 }
+    { skill: 'Remote Work', level: 9 }
 ].sort((a, b) => a.skill.localeCompare(b.skill));
 
 const languageSkills = [
-    { lang: 'JavaScript', level: 10 },
     { lang: 'TypeScript', level: 10 },
-    { lang: 'C#', level: 7 },
-    { lang: 'Java', level: 3 },
-    { lang: 'Go', level: 3 },
-    { lang: 'C/C++', level: 5 },
-    { lang: 'ShellScript', level: 5 }
+    { lang: 'C#', level: 6 },
+    { lang: 'Rust', level: 4 },
+    { lang: 'Java', level: 5 },
+    { lang: 'Python', level: 5 },
+    { lang: 'yaml', level: 6 }
 ].sort((a, b) => a.lang.localeCompare(b.lang));
 
 const techSkills = [
     { name: 'WebRTC', level: 10 },
     { name: 'Docker', level: 6 },
-    { name: 'Windows Server', level: 7 },
+    { name: 'React', level: 8 },
     { name: 'NEC IX', level: 8 },
-    { name: 'Kubernetes', level: 6 },
+    { name: 'Kubernetes', level: 7 },
     { name: 'Prometheus', level: 5 },
-    { name: 'Ubuntu', level: 6 },
-    { name: 'Android', level: 4 }
+    { name: 'Android', level: 5 },
+    { name: 'Security', level: 6 }
 ].sort((a, b) => a.name.localeCompare(b.name));
 
 const skillsData: ChartData<'radar'> = {

@@ -32,7 +32,7 @@ const Home = () => {
                 </div>
                 <div className={style.item}>
                     <p className={utilStyles.headingMd}>好きなこと</p>
-                    <p>睡眠 / Twitter</p>
+                    <p>睡眠 / Mastodon</p>
                 </div>
                 <div className={style.item}>
                     <p className={utilStyles.headingMd}>趣味</p>

@@ -13,6 +13,18 @@ const SNS = () => {
         <div className={styles.container}>
             <div className={styles.item}>
                 <a
+                    href="https://mstdn.sublimer.me/@sublimer"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <FontAwesomeIcon
+                        icon={faMastodon}
+                        className={styles.snsIcon}
+                    ></FontAwesomeIcon>
+                </a>
+            </div>
+            <div className={styles.item}>
+                <a
                     href="https://twitter.com/lz650sss"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -43,18 +55,6 @@ const SNS = () => {
                 >
                     <FontAwesomeIcon
                         icon={faEnvelope}
-                        className={styles.snsIcon}
-                    ></FontAwesomeIcon>
-                </a>
-            </div>
-            <div className={styles.item}>
-                <a
-                    href="https://mstdn.sublimer.me/@sublimer"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <FontAwesomeIcon
-                        icon={faMastodon}
                         className={styles.snsIcon}
                     ></FontAwesomeIcon>
                 </a>
