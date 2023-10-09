@@ -11,11 +11,16 @@ const Products = () => {
                     TypeScript / vite / vitest / playwirght
                 </p>
                 <Image
+                    alt="react-select-media-devices-modal screenshot"
                     className={styles.image}
                     src="/images/react-select-media-devices-modal.png"
                     width={390}
                     height={200}
-                    layout="responsive"
+                    sizes="100vw"
+                    style={{
+                        width: '100%',
+                        height: 'auto'
+                    }}
                 />
                 <p>
                     <a
@@ -48,11 +53,16 @@ const Products = () => {
                 <p>A C#(.NET) implementation of STUN/TURN</p>
                 <p className={styles.smallText}>C# / .NET</p>
                 <Image
+                    alt="TURN packet structure"
                     className={styles.image}
                     src="/images/doturn.png"
                     width={390}
                     height={200}
-                    layout="responsive"
+                    sizes="100vw"
+                    style={{
+                        width: '100%',
+                        height: 'auto'
+                    }}
                 />
                 <p>
                     <a
@@ -80,11 +90,16 @@ const Products = () => {
                 </p>
                 <p className={styles.smallText}>Rust / clap</p>
                 <Image
+                    alt="excitation help screenshot"
                     className={styles.image}
                     src="/images/excitation.png"
                     width={390}
                     height={200}
-                    layout="responsive"
+                    sizes="100vw"
+                    style={{
+                        width: '100%',
+                        height: 'auto'
+                    }}
                 />
                 <p>
                     <a
@@ -106,11 +121,16 @@ const Products = () => {
                     Next.js / React / TypeScript / Azure
                 </p>
                 <Image
+                    alt="fluid screenshot"
                     className={styles.image}
                     src="/images/fluid.png"
                     width={390}
                     height={200}
-                    layout="responsive"
+                    sizes="100vw"
+                    style={{
+                        width: '100%',
+                        height: 'auto'
+                    }}
                 />
                 <p>
                     <a
@@ -155,11 +175,16 @@ const Products = () => {
                     ASP.NET(C#) / SignalR / React / Azure / Docker
                 </p>
                 <Image
+                    alt="live-share-editor screenshot"
                     className={styles.image}
                     src="/images/live-share-editor.png"
                     width={390}
                     height={200}
-                    layout="responsive"
+                    sizes="100vw"
+                    style={{
+                        width: '100%',
+                        height: 'auto'
+                    }}
                 />
                 <p>
                     <a
@@ -188,11 +213,16 @@ const Products = () => {
                     TypeScript / fastify / CLI(commander) / Chart.js
                 </p>
                 <Image
+                    alt="latext-counter screenshot"
                     className={styles.image}
                     src="/images/latext-counter.png"
                     width={390}
                     height={200}
-                    layout="responsive"
+                    sizes="100vw"
+                    style={{
+                        width: '100%',
+                        height: 'auto'
+                    }}
                 />
                 <p>
                     <a
