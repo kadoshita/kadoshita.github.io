@@ -36,7 +36,7 @@ const techSkills = [
     { name: 'WebRTC', level: 10 },
     { name: 'Docker', level: 6 },
     { name: 'React', level: 8 },
-    { name: 'NEC IX', level: 8 },
+    { name: 'Network', level: 8 },
     { name: 'Kubernetes', level: 7 },
     { name: 'Prometheus', level: 5 },
     { name: 'Android', level: 5 },

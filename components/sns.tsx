@@ -1,12 +1,13 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-    faTwitter,
     faMastodon,
     faGithub,
-    faAmazon
+    faAmazon,
+    faXTwitter
 } from '@fortawesome/free-brands-svg-icons';
 import { faBlog, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import styles from './sns.module.css';
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
 const SNS = () => {
     return (
@@ -18,7 +19,7 @@ const SNS = () => {
                     rel="noopener noreferrer"
                 >
                     <FontAwesomeIcon
-                        icon={faMastodon}
+                        icon={faMastodon as IconProp}
                         className={styles.snsIcon}
                     ></FontAwesomeIcon>
                 </a>
@@ -30,7 +31,7 @@ const SNS = () => {
                     rel="noopener noreferrer"
                 >
                     <FontAwesomeIcon
-                        icon={faTwitter}
+                        icon={faXTwitter as IconProp}
                         className={styles.snsIcon}
                     ></FontAwesomeIcon>
                 </a>
@@ -42,7 +43,7 @@ const SNS = () => {
                     rel="noopener noreferrer"
                 >
                     <FontAwesomeIcon
-                        icon={faGithub}
+                        icon={faGithub as IconProp}
                         className={styles.snsIcon}
                     ></FontAwesomeIcon>
                 </a>
@@ -78,7 +79,7 @@ const SNS = () => {
                     rel="noopener noreferrer"
                 >
                     <FontAwesomeIcon
-                        icon={faAmazon}
+                        icon={faAmazon as IconProp}
                         className={styles.snsIcon}
                     ></FontAwesomeIcon>
                 </a>
