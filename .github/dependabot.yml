@@ -1,0 +1,16 @@
+version: 2
+updates:
+    - package-ecosystem: 'npm'
+      directory: '/'
+      schedule:
+          interval: 'monthly'
+      groups:
+          npm-dependencies:
+              patterns:
+                  - '*'
+      ignore:
+          - dependency-name: '@types/node'
+          - dependency-name: '@types/react'
+          - dependency-name: 'react'
+          - dependency-name: 'react-dom'
+          - dependency-name: 'next'
