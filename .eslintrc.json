@@ -17,7 +17,8 @@
         "@typescript-eslint"
     ],
     "ignorePatterns": [
-        "webpack.config.js"
+        "webpack.config.js",
+        "next-env.d.ts"
     ],
     "rules": {
         "semi": [
