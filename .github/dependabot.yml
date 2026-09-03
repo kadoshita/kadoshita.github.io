@@ -10,10 +10,11 @@ updates:
                   - '*'
       ignore:
           - dependency-name: '@types/node'
-          - dependency-name: '@types/react'
-          - dependency-name: 'react'
-          - dependency-name: 'react-dom'
-          - dependency-name: 'next'
+            update-types:
+                  - 'version-update:semver-major'
           - dependency-name: 'typescript'
             update-types:
-                 - 'version-update:semver-major'
+                  - 'version-update:semver-major'
+          - dependency-name: 'react-vertical-timeline-component'
+            update-types:
+                  - 'version-update:semver-major'
